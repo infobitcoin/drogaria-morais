@@ -40,3 +40,14 @@
 @media(max-width:800px){.store-reviews-grid{grid-template-columns:1fr;gap:35px}.store-photo img{height:auto;max-height:500px;object-fit:cover}.reviews-content h2{max-width:650px}}
 @media(max-width:600px){.store-reviews{padding:62px 0}.store-reviews-grid{gap:30px}.store-photo{border-radius:16px}.store-photo img{height:320px;object-fit:cover}.store-photo figcaption{left:12px;bottom:12px;padding:9px 11px;font-size:11px}.reviews-content h2{margin:16px 0 20px}.reviews-score>strong{font-size:3rem}.review-list{grid-template-columns:1fr}.review-card{min-height:0;padding:16px}.review-card p{margin-bottom:11px}.reviews-link{margin-top:19px}}
 
+.hero-store-photo{position:relative;width:100%;margin:0;overflow:hidden;border:9px solid #fff;border-radius:24px;background:#dce9ef;box-shadow:0 28px 65px rgba(20,68,97,.18);transform:rotate(1.5deg)}
+.hero-store-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero-store-photo figcaption{position:absolute;left:19px;bottom:19px;padding:11px 16px;border-radius:9px;background:rgba(255,255,255,.96);box-shadow:0 8px 25px rgba(14,49,85,.16);color:var(--navy);font-size:12px;font-weight:800}
+.hero-store-photo figcaption span{padding:0 4px;color:var(--green)}
+.reviews-pharmacist{position:relative;display:flex;align-items:flex-end;justify-content:center;min-height:510px;margin:0;overflow:hidden;border-radius:22px;background:radial-gradient(circle at 50% 49%,#f7fcf9 0 17%,#e5f3ed 18% 43%,#cce6e0 44% 68%,#e6f2f0 69%);box-shadow:var(--shadow);isolation:isolate}
+.reviews-pharmacist-orbit{position:absolute;inset:43px;border:1px solid rgba(69,140,122,.22);border-radius:50%}
+.reviews-pharmacist img{position:absolute;bottom:0;left:50%;width:auto;height:99%;max-width:100%;object-fit:contain;transform:translateX(-50%);filter:drop-shadow(0 20px 26px rgba(24,76,95,.12));-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 69%,rgba(0,0,0,.9) 77%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 69%,rgba(0,0,0,.9) 77%,transparent 100%)}
+.reviews-pharmacist figcaption{position:relative;z-index:2;margin:0 0 20px;padding:11px 17px;border-radius:9px;background:rgba(255,255,255,.96);box-shadow:0 8px 24px rgba(14,49,85,.14);color:var(--navy);font-size:13px;font-weight:700}
+@media(max-width:800px){.hero-store-photo{width:min(560px,100%);margin:8px auto 0}.reviews-pharmacist{min-height:480px}}
+@media(max-width:600px){.hero-store-photo{border-width:6px;border-radius:18px;transform:none}.hero-store-photo figcaption{left:11px;bottom:11px;padding:9px 11px;font-size:11px}.reviews-pharmacist{min-height:340px;border-radius:16px}.reviews-pharmacist-orbit{inset:28px}.reviews-pharmacist figcaption{margin-bottom:12px;padding:9px 12px;font-size:11px}}
+
